@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,37 +15,39 @@
             --gradient: linear-gradient(135deg, #3a86ff, #8338ec);
             --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             color: var(--dark);
             background-color: var(--light);
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             margin-bottom: 1rem;
             font-weight: 700;
         }
-        
+
         p {
             margin-bottom: 1rem;
         }
-        
+
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.5rem;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 0.8rem 2rem;
@@ -59,12 +62,12 @@
             cursor: pointer;
             text-align: center;
         }
-        
+
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
         }
-        
+
         .btn-download {
             background: var(--success);
             font-size: 1.2rem;
@@ -74,7 +77,7 @@
             justify-content: center;
             gap: 0.5rem;
         }
-        
+
         /* Header */
         header {
             background-color: white;
@@ -84,42 +87,42 @@
             top: 0;
             z-index: 100;
         }
-        
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
         }
-        
+
         .logo {
             font-size: 1.8rem;
             font-weight: 800;
             color: var(--primary);
             text-decoration: none;
         }
-        
+
         .logo span {
             color: var(--secondary);
         }
-        
+
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-        
+
         .nav-links a {
             text-decoration: none;
             color: var(--dark);
             font-weight: 500;
             transition: color 0.3s;
         }
-        
+
         .nav-links a:hover {
             color: var(--primary);
         }
-        
+
         /* Hero Section */
         .hero {
             background: var(--gradient);
@@ -131,7 +134,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -141,24 +144,24 @@
             opacity: 0.1;
             transform: rotate(45deg);
         }
-        
+
         .hero-content {
             max-width: 600px;
             z-index: 2;
         }
-        
+
         .hero h1 {
             font-size: 3.5rem;
             line-height: 1.2;
             margin-bottom: 1.5rem;
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             opacity: 0.9;
         }
-        
+
         .hero-image {
             position: absolute;
             right: 5%;
@@ -169,34 +172,34 @@
             z-index: 2;
             filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
         }
-        
+
         /* Features Section */
         .features {
             padding: 6rem 0;
         }
-        
+
         .section-header {
             text-align: center;
             margin-bottom: 4rem;
         }
-        
+
         .section-header h2 {
             font-size: 2.5rem;
             color: var(--dark);
         }
-        
+
         .section-header p {
             max-width: 700px;
             margin: 0 auto;
             color: #666;
         }
-        
+
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-        
+
         .feature-card {
             background: white;
             border-radius: 15px;
@@ -205,11 +208,11 @@
             transition: transform 0.3s;
             text-align: center;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .feature-icon {
             width: 70px;
             height: 70px;
@@ -222,39 +225,39 @@
             color: white;
             font-size: 1.8rem;
         }
-        
+
         .feature-card h3 {
             margin-bottom: 0.8rem;
             font-size: 1.5rem;
         }
-        
+
         /* Dashboard Section */
         .dashboard {
             padding: 6rem 0;
             background-color: #f0f4ff;
         }
-        
+
         .dashboard-content {
             display: flex;
             align-items: center;
             gap: 4rem;
             flex-wrap: wrap;
         }
-        
+
         .dashboard-info {
             flex: 1;
             min-width: 300px;
         }
-        
+
         .dashboard-info h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .dashboard-info p {
             margin-bottom: 2rem;
         }
-        
+
         .dashboard-preview {
             flex: 1;
             min-width: 300px;
@@ -264,47 +267,47 @@
             padding: 2rem;
             position: relative;
         }
-        
+
         .metrics-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
-        
+
         .metric-card {
             background: #f8f9fa;
             border-radius: 10px;
             padding: 1.5rem;
             text-align: center;
         }
-        
+
         .metric-card h3 {
             font-size: 1rem;
             color: #666;
             margin-bottom: 0.5rem;
         }
-        
+
         .metric-value {
             font-size: 2rem;
             font-weight: 700;
             color: var(--primary);
         }
-        
+
         .chart-container {
             width: 100%;
             height: 200px;
             position: relative;
             margin-top: 1rem;
         }
-        
+
         /* App Section */
         .app-section {
             padding: 6rem 0;
             background: var(--dark);
             color: white;
         }
-        
+
         .app-content {
             display: flex;
             align-items: center;
@@ -312,52 +315,52 @@
             gap: 4rem;
             flex-wrap: wrap;
         }
-        
+
         .app-info {
             flex: 1;
             min-width: 300px;
         }
-        
+
         .app-info h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .app-features {
             margin: 2rem 0;
         }
-        
+
         .app-feature {
             display: flex;
             align-items: center;
             margin-bottom: 1rem;
         }
-        
+
         .app-feature-check {
             color: var(--success);
             margin-right: 0.8rem;
             font-size: 1.2rem;
             font-weight: bold;
         }
-        
+
         .app-screenshots {
             flex: 1;
             min-width: 300px;
             display: flex;
             justify-content: center;
         }
-        
+
         .app-screenshot {
             max-width: 100%;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-        
+
         /* Contact Section */
         .contact {
             padding: 6rem 0;
         }
-        
+
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
@@ -366,17 +369,17 @@
             border-radius: 15px;
             box-shadow: var(--shadow);
         }
-        
+
         .form-group {
             margin-bottom: 1.5rem;
         }
-        
+
         .form-label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
         }
-        
+
         .form-control {
             width: 100%;
             padding: 0.8rem 1rem;
@@ -384,12 +387,12 @@
             border-radius: 8px;
             font-size: 1rem;
         }
-        
+
         textarea.form-control {
             min-height: 150px;
             resize: vertical;
         }
-        
+
         /* Footer */
         footer {
             background: var(--dark);
@@ -397,7 +400,7 @@
             padding: 3rem 0 1.5rem;
             text-align: center;
         }
-        
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -405,49 +408,49 @@
             flex-wrap: wrap;
             margin-bottom: 2rem;
         }
-        
+
         .footer-links a {
             color: #ddd;
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .footer-links a:hover {
             color: white;
         }
-        
+
         .copyright {
             font-size: 0.9rem;
             color: #999;
             margin-top: 1.5rem;
         }
-        
+
         /* Responsive */
         @media (max-width: 992px) {
             .hero h1 {
                 font-size: 2.8rem;
             }
-            
+
             .hero-image {
                 width: 45%;
                 right: 2%;
             }
         }
-        
+
         @media (max-width: 768px) {
             .hero {
                 padding: 8rem 0 4rem;
             }
-            
+
             .hero-content {
                 text-align: center;
                 margin: 0 auto;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .hero-image {
                 position: relative;
                 width: 80%;
@@ -457,17 +460,17 @@
                 top: auto;
                 transform: none;
             }
-            
+
             .nav-links {
                 display: none;
             }
-            
+
             .dashboard-content,
             .app-content {
                 flex-direction: column;
                 gap: 3rem;
             }
-            
+
             .dashboard-info,
             .app-info {
                 text-align: center;
@@ -475,6 +478,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -490,57 +494,61 @@
             </nav>
         </div>
     </header>
-    
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1>Smart Health Monitoring at Your Fingertip</h1>
-                <p>Track your vital signs in real-time with our advanced ESP-based monitoring device. Get accurate readings of heart rate, SpO2, temperature, and more.</p>
-                <a href="#app" class="btn">Download App</a>
+                <p>Track your vital signs in real-time with our advanced ESP-based monitoring device. Get accurate
+                    readings of heart rate, SpO2, temperature, and more.</p>
+                <a href="#app" class="btn">Download App v1.0.1</a>
             </div>
             <div class="hero-image">
                 <img src="/api/placeholder/500/400" alt="VitalTrack Device" />
             </div>
         </div>
     </section>
-    
+
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
             <div class="section-header">
                 <h2>Advanced Health Monitoring</h2>
-                <p>Our device combines multiple sensors to give you a comprehensive overview of your vital health metrics in seconds.</p>
+                <p>Our device combines multiple sensors to give you a comprehensive overview of your vital health
+                    metrics in seconds.</p>
             </div>
-            
+
             <div class="feature-grid">
                 <div class="feature-card">
                     <div class="feature-icon">❤️</div>
                     <h3>Heart Rate</h3>
-                    <p>Monitor your pulse with medical-grade accuracy. Track your heart rate during rest and activity.</p>
+                    <p>Monitor your pulse with medical-grade accuracy. Track your heart rate during rest and activity.
+                    </p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">🫁</div>
                     <h3>Blood Oxygen (SpO2)</h3>
                     <p>Measure oxygen saturation levels in your bloodstream to ensure optimal respiratory function.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">🌡️</div>
                     <h3>Body Temperature</h3>
                     <p>Keep track of your body temperature to detect potential fever or hypothermia early.</p>
                 </div>
-                
+
                 <div class="feature-card">
                     <div class="feature-icon">🌤️</div>
                     <h3>Environmental Monitoring</h3>
-                    <p>Measure ambient temperature and humidity to understand environmental factors affecting your health.</p>
+                    <p>Measure ambient temperature and humidity to understand environmental factors affecting your
+                        health.</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Dashboard Section -->
     <section class="dashboard" id="dashboard">
         <div class="container">
@@ -548,53 +556,57 @@
                 <h2>Real-Time Health Dashboard</h2>
                 <p>Monitor all your vital signs in one place with our intuitive web dashboard.</p>
             </div>
-            
+
             <div class="dashboard-content">
                 <div class="dashboard-info">
                     <h2>See Your Health Metrics in Real-Time</h2>
-                    <p>Our web dashboard provides instant visualization of all your health metrics. Track trends over time and export your data for medical consultations.</p>
-                    <p>Simply place your finger in the device sensor slot and watch as the dashboard updates in real-time with your vital signs.</p>
+                    <p>Our web dashboard provides instant visualization of all your health metrics. Track trends over
+                        time and export your data for medical consultations.</p>
+                    <p>Simply place your finger in the device sensor slot and watch as the dashboard updates in
+                        real-time with your vital signs.</p>
                 </div>
-                
+
                 <div class="dashboard-preview">
                     <div class="metrics-grid">
                         <div class="metric-card">
                             <h3>Heart Rate</h3>
                             <div class="metric-value">75 BPM</div>
                         </div>
-                        
+
                         <div class="metric-card">
                             <h3>SpO2</h3>
                             <div class="metric-value">98%</div>
                         </div>
-                        
+
                         <div class="metric-card">
                             <h3>Body Temp</h3>
                             <div class="metric-value">98.6°F</div>
                         </div>
-                        
+
                         <div class="metric-card">
                             <h3>Humidity</h3>
                             <div class="metric-value">42%</div>
                         </div>
                     </div>
-                    
+
                     <div class="chart-container">
-                        <img src="/assets/graph.png" alt="Health Metrics Chart" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" />
+                        <img src="/assets/graph.png" alt="Health Metrics Chart"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- App Section -->
     <section class="app-section" id="app">
         <div class="container">
             <div class="app-content">
                 <div class="app-info">
                     <h2>Take Your Health Monitoring On the Go</h2>
-                    <p>Download our mobile application to access your health data anytime, anywhere. Get real-time updates and historical trends right in your pocket.</p>
-                    
+                    <p>Download our mobile application to access your health data anytime, anywhere. Get real-time
+                        updates and historical trends right in your pocket.</p>
+
                     <div class="app-features">
                         <div class="app-feature">
                             <span class="app-feature-check">✓</span>
@@ -613,17 +625,17 @@
                             <span>Export data for medical consultations</span>
                         </div>
                     </div>
-                    
+
                     <a href="app/pulse.apk" class="btn btn-download">Download Now</a>
                 </div>
-                
+
                 <div class="app-screenshots">
                     <img src="/api/placeholder/300/600" alt="VitalTrack App" class="app-screenshot" />
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Contact Section -->
     <!-- <section class="contact" id="contact">
         <div class="container">
@@ -654,7 +666,7 @@
             </div>
         </div>
     </section> -->
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -667,11 +679,12 @@
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a> -->
             </div>
-            
+
             <div class="copyright">
                 &copy; 2025 Pulse. All rights reserved.
             </div>
         </div>
     </footer>
 </body>
+
 </html>
